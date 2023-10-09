@@ -1,0 +1,176 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Gabarito", cursive;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Apply some basic styles to improve readability and aesthetics */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0f0e0e;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f6f1f1;
+}
+nav ul li:hover {
+  border: 1px dotted red;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Style the hero section */
+#hero {
+  background-image: url("imgs/mainBackgroungImg.avif");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+/* Style the call-to-action button */
+.cta-button {
+  display: inline-block;
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* Service heading  */
+.serviceHeading {
+  margin: 10px;
+  color: #242424;
+  text-align: center;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* CSS for the Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.card.active {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Blurred effect for other content when a card is clicked or hovered */
+.blurred {
+  filter: blur(5px);
+}
+
+/* Client section  */
+/* CSS for the Client Logos */
+#clients {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.client-logos img {
+  max-width: 150px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin: 10px; /* Add space between logos */
+}
+
+/* CSS for the Contact Form */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3879f1;
+}
